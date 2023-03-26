@@ -5,11 +5,12 @@ const ToggleLanguage = () => {
   
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng)
+    localStorage.setItem('lang', lng)
   }
 
   return (
     <button className="ml-auto text-lg text-blue-700 dark:text-slate-50" onClick={() => changeLanguage(i18n.language === 'en' ? 'fr' : 'en')}>
-      {t('language')}
+      {i18n.language === 'en' ? 'FR' : 'EN'}
     </button>
   )
 }
