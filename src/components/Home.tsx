@@ -8,7 +8,7 @@ const Home = () => {
     <>
     <Navbar />
     <div className="flex flex-col items-center">
-      <a href="https://discord.gg/y5CMgTKwdM" target="_blank">
+      <a href="https://discord.gg/VqcXXKGZJf" target="_blank">
         <button className="flex items-center justify-between rounded-2xl text-xl mt-72 px-4 py-3 w-80 bg-blue-600 hover:bg-blue-500 text-slate-50">
           {t('home.join')}
           <div className="flex items-center justify-center rounded-full bg-white w-10 h-10">
