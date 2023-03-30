@@ -8,8 +8,9 @@ const Home = () => {
     <>
     <Navbar />
     <div className="flex flex-col items-center">
-      <a href="https://discord.gg/y5CMgTKwdM" target="_blank">
-        <button className="flex items-center justify-between rounded-2xl text-xl mt-72 px-4 py-3 w-80 bg-blue-600 hover:bg-blue-500 text-slate-50">
+      <a className="rounded-2xl text-xl mt-72 bg-blue-600 hover:bg-blue-500 text-slate-50"
+       href="https://discord.gg/VqcXXKGZJf" target="_blank">
+        <button className="flex items-center justify-between px-4 py-3 w-80">
           {t('home.join')}
           <div className="flex items-center justify-center rounded-full bg-white w-10 h-10">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} className="w-6 h-6 stroke-blue-600">
