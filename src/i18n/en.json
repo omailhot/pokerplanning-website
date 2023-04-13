@@ -15,9 +15,11 @@
     "results": {
       "AIVote": "AI vote ",
       "average": "Average",
-      "noResults": "No results found",
       "context": "Provided context for session",
+      "goBack": "Go back to home page",
       "noContext": "No context provided",
+      "noResults": "No results found",
+      "noSession": "No session was found using this code",
       "questions": "Select a feature",
       "users": "Session participants",
       "finalVote": "Final vote",

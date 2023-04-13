@@ -15,9 +15,11 @@
     "results": {
       "AIVote": "Vote de l'IA",
       "average": "Moyenne",
-      "noResults": "No results found",
       "context": "Contexte de la session",
+      "goBack": "Retour au menu principal",
       "noContext": "Aucun contexte n'a été défini pour cette session",
+      "noResults": "Aucun résultat trouvé",
+      "noSession": "Aucune session n'a été trouvée avec ce code",
       "questions": "Fonctionnalités",
       "users": "Participants de la session",
       "finalVote": "Vote final",

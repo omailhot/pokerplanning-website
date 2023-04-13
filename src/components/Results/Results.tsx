@@ -67,6 +67,14 @@ const Results = () => {
 
   return (
     <div className="block sm:flex">
+      {!sessionData && (
+        <div className="flex ml-auto mr-auto mt-10 text-center">
+          <Card title={t("results.noSession")} 
+            description={
+              <Link className="underline" to={"/"}>{t("results.goBack")}</Link>
+            }/>
+        </div>
+      )}
       {sessionData && (
         <>
           <div className="block min-w-lg sm:max-w-lg max-h-3xl overflow-y-auto p-2 mt-3 mr-3 ml-3 bg-slate-200 dark:bg-slate-700 rounded-lg">
