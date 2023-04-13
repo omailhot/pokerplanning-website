@@ -1,9 +1,27 @@
 { 
   "translation": {
+    "features": {
+      "details": "Détails",
+      "finalVote": "Vote final",
+      "ai": "Vote de l'IA",
+      "votes": "Votes"
+    },
     "home": {
       "add": "Ajouter à votre serveur",
-      "join": "Planning IGL601"
+      "join": "Planning IGL601",
+      "search": "Entrez un code de session"
     },
-    "language": "FR"
+    "language": "FR",
+    "results": {
+      "AIVote": "Vote de l'IA",
+      "average": "Moyenne",
+      "noResults": "No results found",
+      "context": "Contexte de la session",
+      "noContext": "Aucun contexte n'a été défini pour cette session",
+      "questions": "Fonctionnalités",
+      "users": "Participants de la session",
+      "finalVote": "Vote final",
+      "votes": "Résultats des votes"
+    }
   }
 }

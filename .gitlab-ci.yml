@@ -1,0 +1,66 @@
+image: node:16.13.1
+
+stages:          # List of stages for jobs, and their order of execution
+  - npm
+  - lint
+  - test
+  - build
+  - deploy
+
+npm:
+  stage: npm
+  script:
+    - npm install
+  cache:
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - node_modules/
+
+lint: 
+  stage: lint
+  dependencies:
+    - npm
+  script:
+    - npm run lint
+
+test:
+  stage: test
+  dependencies:
+    - npm
+  script:
+    - npm run test
+
+build:
+  stage: build
+  dependencies:
+    - npm
+  script:
+    - npm run build
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: npm
+    paths:
+      - node_modules/
+  script:
+    - npm install
+    - npm run build --base=$CI_PAGES_URL
+    - cp -a dist/. public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

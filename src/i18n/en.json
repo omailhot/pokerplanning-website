@@ -1,9 +1,27 @@
 {
   "translation": {
+    "features": {
+      "details": "Details",
+      "finalVote": "Final vote",
+      "ai": "AI vote",
+      "votes": "Votes"
+    },
     "home": {
       "add": "Add to your own server",
-      "join": "Join IGL601 planning"
+      "join": "Join IGL601 planning",
+      "search": "Enter session code"
     },
-    "language": "EN"
+    "language": "EN",
+    "results": {
+      "AIVote": "AI vote ",
+      "average": "Average",
+      "noResults": "No results found",
+      "context": "Provided context for session",
+      "noContext": "No context provided",
+      "questions": "Select a feature",
+      "users": "Session participants",
+      "finalVote": "Final vote",
+      "votes": "Vote results"
+    }
   }
 }
